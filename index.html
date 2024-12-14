@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Experiment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Consent Page -->
+  <section id="consent-page">
+    <h1>Welcome to the Academic Experiment</h1>
+    <p>
+      Thank you for participating! Your responses will remain anonymous and will
+      be used solely for research purposes. Please confirm your consent below.
+    </p>
+    <label class="consent-checkbox">
+      <input type="checkbox" id="consent-checkbox"> I agree to participate in this study.
+    </label>
+    <button id="consent-next" disabled>Next</button>
+  </section>
+
+  <!-- Introduction Page -->
+  <section id="intro-page" style="display:none;">
+    <h1>Introduction</h1>
+    <p>
+      You will complete a series of tasks, including logical reasoning and mathematical questions.
+      Please read each question carefully and provide the best answer. Participation is voluntary.
+    </p>
+    <button id="intro-next">Next</button>
+  </section>
+
+  <!-- Task 1 Page -->
+  <section id="pre-task-page" style="display:none;">
+    <h1>Task 1</h1>
+    <div id="pre-task-container" class="question-container"></div>
+  </section>
+
+  <!-- Break Page -->
+  <section id="break-page" style="display:none;">
+    <h1>Take a Break</h1>
+    <p>
+      Your first task is complete. Feel free to take a short break and return to continue the study.
+    </p>
+    <button id="proceed-to-post-task">Continue</button>
+  </section>
+
+  <!-- Task 2 Page -->
+  <section id="post-task-page" style="display:none;">
+    <h1>Task 2</h1>
+    <div id="post-task-container" class="question-container"></div>
+  </section>
+
+  <!-- Thank You Page -->
+  <section id="thank-you-page" style="display:none;">
+    <h1>Thank You!</h1>
+    <p>
+      Thank you for participating in our study. Please download your results below.
+    </p>
+    <button id="download-results">Download Results</button>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
